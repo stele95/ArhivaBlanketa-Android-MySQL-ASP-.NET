@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item android:id="@+id/action_save"
+        android:title="Sacuvaj blanket"
+        android:showAsAction="never"/>
+
+
+    <item android:id="@+id/action_report"
+        android:title="Prijavi blanket"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_resenja"
+        android:title="Resenja za blanket"
+        android:showAsAction="never" />
+</menu>

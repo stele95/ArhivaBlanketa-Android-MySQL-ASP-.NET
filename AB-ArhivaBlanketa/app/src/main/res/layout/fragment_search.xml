@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Smer:" />
+
+        <Spinner
+            android:id="@+id/spinnerSmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textViewg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/spinnerSmer"
+            android:layout_marginTop="20dp"
+            android:text="Godina studija:" />
+
+        <Spinner
+            android:id="@+id/spinnerGodSt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewg"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerGodSt"
+            android:layout_marginTop="20dp"
+            android:text="Predmet:"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_alignEnd="@+id/cbPismeni" />
+
+
+
+        <Spinner
+            android:id="@+id/spinnerPredmet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/spinnerPredmet"
+            android:layout_marginTop="20dp"
+            android:text="Rok:" />
+
+        <Spinner
+            android:id="@+id/spinnerRok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/spinnerRok"
+            android:layout_marginTop="20dp"
+            android:text="Godina:" />
+
+        <Spinner
+            android:id="@+id/spinnerGodina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="5dp" />
+
+        <CheckBox
+            android:id="@+id/cbPismeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/spinnerGodina"
+            android:layout_marginTop="20dp"
+            android:text="Pismeni  " />
+
+        <CheckBox
+            android:id="@+id/cbUsmeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cbPismeni"
+            android:layout_centerHorizontal="true"
+            android:text="Usmeni  " />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cbUsmeni"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Trazi" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ab.ssd.ab_arhivablanketa.AddResenjeActivity">
+
+    <TextView
+        android:id="@+id/txtBlanket"
+        android:text="Podaci o blanketu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnAddSlikaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slikaj"
+        android:layout_below="@+id/txtBlanket"
+        android:layout_marginStart="95dp" />
+
+    <Button
+        android:id="@+id/btnAddIzaberi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izaberi"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@+id/btnPostavi"
+        android:layout_toEndOf="@+id/btnAddSlikaj"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnAddIzaberi"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/btnPostavi"
+        android:text="Postavi"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddSlikaj"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
